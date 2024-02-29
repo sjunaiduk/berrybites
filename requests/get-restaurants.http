@@ -19,17 +19,17 @@ GET https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{{po
       "id": "189725",
       "name": "Galinha's Peri Peri",
       "uniqueName": "galinhas-peri-peri-luton",
-         "address": {
-        "city": "Luton",
-        "firstLine": "76 Hart Lane",
-        "postalCode": "LU2 0JG",
-        "location": {
-          "type": "Point",
-          "coordinates": [
-            -0.400878,
-            51.885097
-          ]
-        }
+      "address": {
+            "city": "Luton",
+            "firstLine": "76 Hart Lane",
+            "postalCode": "LU2 0JG",
+            "location": {
+                "type": "Point",
+                "coordinates": [
+                -0.400878,
+                51.885097
+                ]
+            }
       },
       "rating": {
         "count": 2461,
