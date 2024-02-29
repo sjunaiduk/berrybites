@@ -1,0 +1,63 @@
+@postcode=LU11TU
+
+GET https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{{postcode}}
+
+
+# Example response, we will use the data in the restaurants array.
+
+# For the task we are interested in:
+#   - Name
+#   - Cusuine(s)
+#   - Rating
+#   - Address 
+
+# We can improve the interface by including the 'logoUrl' in our user-interface.
+
+"restaurants": [
+
+    {
+      "id": "189725",
+      "name": "Galinha's Peri Peri",
+      "uniqueName": "galinhas-peri-peri-luton",
+      "address": {
+      },
+      "rating": {
+      },
+      "isNew": false,
+      "driveDistanceMeters": 2128.0,
+      "openingTimeLocal": "2024-03-01T17:45:00",
+      "deliveryOpeningTimeLocal": "2024-02-29T17:25:00",
+      "deliveryEtaMinutes": {
+        "rangeLower": 25,
+        "rangeUpper": 40
+      },
+      "isCollection": false,
+      "isDelivery": true,
+      "isOpenNowForCollection": false,
+      "isOpenNowForDelivery": true,
+      "isOpenNowForPreorder": false,
+      "isTemporarilyOffline": false,
+      "deliveryCost": 1.49,
+      "minimumDeliveryValue": 0.0,
+      "defaultDisplayRank": 0,
+      "isTemporaryBoost": false,
+      "isPremier": false,
+      "logoUrl": "http://d30v2pzvrfyzpo.cloudfront.net/uk/images/restaurants/189725.gif",
+      "isTestRestaurant": false,
+      "deals": [
+        {
+          "description": "",
+          "offerType": "StampCard"
+        }
+      ],
+      "tags": [],
+      "cuisines": [
+      ],
+      "availability": {
+      }
+    },
+]
+
+
+
+
