@@ -22,6 +22,7 @@ const Navbar = () => {
         className={`${colorMode == "dark" ? "moon-icon" : "sun-icon"}`}
         onClick={() => toggleColorMode()}
         bg={"#ff9e007d"}
+        data-testid={"toggle-theme"}
       >
         {colorMode == "dark" ? <MoonIcon /> : <SunIcon />}
       </Button>
