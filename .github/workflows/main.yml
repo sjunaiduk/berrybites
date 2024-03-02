@@ -21,11 +21,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
+        working-directory: src/berrybite.ui
         run: npm ci
       - name: Build
+        working-directory: src/berrybite.ui
         run: npm run build
       - name: Test
+        working-directory: src/berrybite.ui
         run: npm test
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
