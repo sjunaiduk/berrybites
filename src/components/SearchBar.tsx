@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { useState } from "react";
-import { IsPostcodeValid } from "../utils/checkers";
+import { IsPostcodeValid } from "../utils/postcodeChecker";
 
 function SearchBar() {
   const [postcode, setPostcode] = useState("");

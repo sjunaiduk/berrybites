@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { IsPostcodeValid } from "../src/utils/checkers";
+import { IsPostcodeValid } from ".";
 
 describe("Postcode checker", () => {
   it("Should return true for valid postcode permutations", () => {
