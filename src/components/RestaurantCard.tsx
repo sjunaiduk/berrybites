@@ -40,7 +40,7 @@ const RestaurantCard = ({ restaurant }: Props) => {
         }}
       >
         <Flex id="image" alignItems={"center"}>
-          <Image src={restaurant.logoUrl} />
+          <Image src={restaurant.logoUrl} minW={"100px"} />
         </Flex>
         <Stack id="content" width={"100%"}>
           <Heading size="lg" mb={7}>
@@ -52,7 +52,7 @@ const RestaurantCard = ({ restaurant }: Props) => {
               sm: "auto 1fr",
             }}
           >
-            <VStack alignItems={"left"}>
+            <VStack mr={2} alignItems={"left"}>
               <Flex alignItems={"center"}>
                 <StarIcon color={"orange"} mr={1} />{" "}
                 <Text fontWeight={"bold"} className="star-rating">
