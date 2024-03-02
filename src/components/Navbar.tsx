@@ -14,7 +14,7 @@ const Navbar = () => {
     >
       <HStack spacing={0}>
         <Image src={logo} />
-        <Text fontWeight={600} fontSize={"x-large"}>
+        <Text color={"white"} fontWeight={600} fontSize={"x-large"}>
           BerryBite
         </Text>
       </HStack>

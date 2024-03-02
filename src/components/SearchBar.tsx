@@ -14,12 +14,20 @@ function SearchBar() {
         <SearchIcon />
       </InputLeftElement>
       <Input
-        placeholder="Enter password"
-        textOverflow={"hidden"}
-        pr={"10rem"}
+        placeholder="Search restaurants by postcode"
+        textOverflow={"ellipsis"}
+        pr={{
+          base: "7rem",
+          md: "10rem",
+        }}
       />
       <InputRightElement width="6rem">
-        <Button backgroundColor={"#ff8000"} borderRadius={20}>
+        <Button
+          _hover={{ bg: "#ff9000" }}
+          backgroundColor={"#ff8000"}
+          borderRadius={20}
+          color={"white"}
+        >
           Search
         </Button>
       </InputRightElement>
