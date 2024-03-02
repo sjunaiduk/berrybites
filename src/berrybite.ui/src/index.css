@@ -1,0 +1,15 @@
+.chakra-ui-light {
+  background-color: #f5f5f5;
+}
+
+.sun-icon:hover {
+  background-color: #ff9730 !important;
+  opacity: 0.8;
+}
+
+.star-rating::after {
+  content: "/5";
+  color: rgb(138, 138, 138);
+  font-size: 0.8em; /* Adjust the size as needed */
+  margin-left: 4px; /* Adds a small space between the rating and the "/5" */
+}
