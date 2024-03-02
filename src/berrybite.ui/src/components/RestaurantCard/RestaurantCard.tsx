@@ -18,6 +18,7 @@ interface Props {
 const RestaurantCard = ({ restaurant }: Props) => {
   return (
     <Card
+      data-testid="restaurant-card"
       minW={"320px"}
       px={4}
       py={6}
