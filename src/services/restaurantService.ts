@@ -6,10 +6,12 @@ const client = axios.create({
   }`,
 });
 
-export class RestaurantService {
+class RestaurantService {
   async GetAll(postcode: string): Promise<Restaurant[]> {
     var res = await client.get<GetRestaurantsResponse>(`/${postcode}`);
 
     return res.data.restaurants;
   }
 }
+
+export default new RestaurantService();
