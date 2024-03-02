@@ -38,8 +38,8 @@ const RestaurantCard = ({ restaurant }: Props) => {
               spacing={1}
               templateColumns="repeat(3, max-content)"
             >
-              {restaurant.cuisines.map((cuisine) => (
-                <Tag size={"sm"} color={"gray"}>
+              {restaurant.cuisines.map((cuisine, index) => (
+                <Tag key={index} size={"sm"} color={"gray"}>
                   {cuisine.name}
                 </Tag>
               ))}
