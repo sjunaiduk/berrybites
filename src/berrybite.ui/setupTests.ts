@@ -3,6 +3,7 @@ import nock from "nock";
 import { HardcodedRestaurants } from "./src/utils/data";
 
 nock(import.meta.env.VITE_JET_RESTAURANTS_API)
+  .persist()
   .defaultReplyHeaders({
     "access-control-allow-origin": "*",
   })
