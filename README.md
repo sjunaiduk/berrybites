@@ -14,6 +14,11 @@ BerryBiteBrowser is a quick and easy tool designed to help you discover the top 
 
 ### Restaurants Endpoint
 
+#### CORS Configuration
+
+Calling the JustEat Restaurants endpoint from an origin other than JustEat's fails due to a CORS Policy.
+I just proxied the request instead since CORS doesn't apply in a non-browser environment.
+
 ### Ratings Object
 
 ```json
