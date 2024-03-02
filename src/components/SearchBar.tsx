@@ -9,20 +9,31 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import { IsPostcodeValid } from "../utils/checkers";
 
 function SearchBar() {
   const [postcode, setPostcode] = useState("");
+  const [isValid, setisValid] = useState(true);
+
+  const onSearch = () => setisValid(IsPostcodeValid(postcode));
+  const onInputChange = (text: string) => {
+    setPostcode(text);
+    setisValid(true);
+  };
   return (
-    <FormControl isInvalid={false}>
+    <FormControl isInvalid={!isValid}>
       <InputGroup mt={8} size="lg">
         <InputLeftElement>
           <SearchIcon />
         </InputLeftElement>
         <Input
+          data-testid={"postcode-searchbar"}
           placeholder="Search restaurants by postcode"
           textOverflow={"ellipsis"}
           value={postcode}
-          onChange={(e) => setPostcode(e.target.value)}
+          onChange={(e) => {
+            onInputChange(e.target.value);
+          }}
           pr={{
             base: "7rem",
             md: "10rem",
@@ -30,16 +41,18 @@ function SearchBar() {
         />
         <InputRightElement width="6rem">
           <Button
+            data-testid={"postcode-search-button"}
             _hover={{ bg: "#ff9000" }}
             backgroundColor={"#ff8000"}
             borderRadius={20}
             color={"white"}
+            onClick={() => onSearch()}
           >
             Search
           </Button>
         </InputRightElement>
       </InputGroup>
-      <FormErrorMessage>Email is required.</FormErrorMessage>
+      <FormErrorMessage>Postcode entered is invalid.</FormErrorMessage>
     </FormControl>
   );
 }
