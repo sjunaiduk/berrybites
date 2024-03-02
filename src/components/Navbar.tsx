@@ -9,7 +9,7 @@ const Navbar = () => {
       justifyContent={"space-between"}
       px={3}
       py={3}
-      bg={`${colorMode == "dark" ? "#ff8000" : "white"}`}
+      bg={`#ff8000`}
       color={`${colorMode == "dark" ? "white" : "#ff8000"}`}
     >
       <HStack spacing={0}>
@@ -24,7 +24,7 @@ const Navbar = () => {
         bg={"#ff9e007d"}
         data-testid={"toggle-theme"}
       >
-        {colorMode == "dark" ? <MoonIcon /> : <SunIcon />}
+        {colorMode == "dark" ? <MoonIcon /> : <SunIcon color={"white"} />}
       </Button>
     </HStack>
   );
