@@ -11,8 +11,9 @@ class RestaurantService {
       console.log(
         "Environment is production, returning hardcoded restaurants."
       );
-
-      return HardcodedRestaurants;
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(HardcodedRestaurants), 1000);
+      });
     }
     var res = await client.get<GetRestaurantsResponse>(`/${postcode}`);
     return res.data.restaurants;
