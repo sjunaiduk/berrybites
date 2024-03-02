@@ -1,7 +1,7 @@
 import { Container, Flex } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import RestaurantsGrid from "./components/RestaurantsGrid";
-import { HardcodedRestaurants } from "./utils";
+import { HardcodedRestaurants } from "./utils/data";
 import SearchBar from "./components/SearchBar";
 
 function App() {
