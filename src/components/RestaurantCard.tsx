@@ -18,7 +18,17 @@ interface Props {
 }
 const RestaurantCard = ({ restaurant }: Props) => {
   return (
-    <Card minW={"320px"} px={4} py={6} background={"#fff"} color={"#000"}>
+    <Card
+      minW={"320px"}
+      px={4}
+      py={6}
+      background={"#fff"}
+      color={"#000"}
+      transition="all 0.2s ease-in-out" // Apply a transition effect for all states
+      _hover={{
+        transform: "scale(1.05)",
+      }}
+    >
       <SimpleGrid
         gap={{
           base: 2,
@@ -86,6 +96,10 @@ const RestaurantCard = ({ restaurant }: Props) => {
               >
                 {" "}
                 <Flex
+                  width={{
+                    sm: "60px",
+                    md: "120px",
+                  }}
                   flexDirection={{
                     base: "row",
                     sm: "column",
