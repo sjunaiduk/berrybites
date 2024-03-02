@@ -13,3 +13,7 @@
   font-size: 0.8em; /* Adjust the size as needed */
   margin-left: 4px; /* Adds a small space between the rating and the "/5" */
 }
+
+#root {
+  min-width: fit-content;
+}

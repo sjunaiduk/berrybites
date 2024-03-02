@@ -12,7 +12,7 @@ function App() {
       <Container maxWidth={"800px"}>
         <Flex justifyContent={"center"} flexDirection={"column"}>
           <SearchBar />
-          <RestaurantsGrid restaurants={data || []} />
+          <RestaurantsGrid restaurants={data?.slice(0, 10) || []} />
         </Flex>
       </Container>
     </>
