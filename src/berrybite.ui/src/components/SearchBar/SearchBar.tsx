@@ -8,18 +8,29 @@ import {
   FormErrorMessage,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
-import { useState } from "react";
 import { IsPostcodeValid } from "../../utils/postcodeChecker";
+import { useState } from "react";
 
-function SearchBar() {
-  const [postcode, setPostcode] = useState("");
+interface Props {
+  postcode: string;
+  setPostcode: (value: string) => void;
+  fetchData: () => void;
+}
+function SearchBar({ postcode, setPostcode, fetchData }: Props) {
   const [isValid, setisValid] = useState(true);
 
-  const onSearch = () => setisValid(IsPostcodeValid(postcode));
+  const onSearch = () => {
+    var valid = IsPostcodeValid(postcode);
+    if (valid) {
+      fetchData();
+    }
+    setisValid(valid);
+  };
   const onInputChange = (text: string) => {
     setPostcode(text);
     setisValid(true);
   };
+
   return (
     <FormControl isInvalid={!isValid}>
       <InputGroup mt={8} size="lg">
