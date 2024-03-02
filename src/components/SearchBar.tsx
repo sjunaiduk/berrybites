@@ -52,7 +52,9 @@ function SearchBar() {
           </Button>
         </InputRightElement>
       </InputGroup>
-      <FormErrorMessage>Postcode entered is invalid.</FormErrorMessage>
+      <FormErrorMessage data-testid="searchbar-error-message">
+        Postcode entered is invalid.
+      </FormErrorMessage>
     </FormControl>
   );
 }
