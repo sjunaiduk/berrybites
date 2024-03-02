@@ -7,9 +7,11 @@ const client = axios.create({
 
 class RestaurantService {
   async GetAll(postcode: string): Promise<Restaurant[]> {
-    console.log("Environment is ", import.meta.env.MODE);
+    if (import.meta.env.MODE == "production") {
+      console.log(
+        "Environment is production, returning hardcoded restaurants."
+      );
 
-    if (import.meta.env.MODE == "Production") {
       return HardcodedRestaurants;
     }
     var res = await client.get<GetRestaurantsResponse>(`/${postcode}`);
