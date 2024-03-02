@@ -10,7 +10,7 @@ describe("useRestaurants hook", () => {
 
     // Act
     const { result } = renderHook(() => useRestaurants("LU1 1TU"), { wrapper });
-
+    result.current.refetch();
     // Assert
     await waitFor(() => expect(result.current.data).toBeTruthy(), {
       timeout: 5000,

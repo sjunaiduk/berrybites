@@ -5,4 +5,6 @@ export const useRestaurants = (postcode: string) =>
   useQuery({
     queryKey: ["restaurants", postcode],
     queryFn: () => restaurantService.GetAll(postcode),
+    enabled: false,
+    gcTime: 5000,
   });
