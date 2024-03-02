@@ -16,7 +16,8 @@ interface Address {
 interface Restaurant {
   id: string;
   name: string;
-  cusuines: Cuisine[];
+  cuisines: Cuisine[];
   rating: Rating;
   address: Address;
+  logoUrl: string;
 }
