@@ -21,3 +21,7 @@ interface Restaurant {
   address: Address;
   logoUrl: string;
 }
+
+interface GetRestaurantsResponse {
+  restaurants: Restaurant[];
+}
