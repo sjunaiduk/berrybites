@@ -1,6 +1,6 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import SearchBar from "../src/components/SearchBar";
+import SearchBar from "./SearchBar";
 import userEvent from "@testing-library/user-event";
 
 describe("Search bar", () => {

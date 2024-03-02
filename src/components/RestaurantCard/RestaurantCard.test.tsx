@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import RestaurantCard from "../src/components/RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 
 describe("Restaurant Card", () => {
   it("should show restaraunt details passed in as a prop", () => {

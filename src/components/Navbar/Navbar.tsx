@@ -1,6 +1,6 @@
 import { Button, HStack, Image, Text, useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import logo from "../assets/berrybitelogo.svg";
+import logo from "../../assets/berrybitelogo.svg";
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 

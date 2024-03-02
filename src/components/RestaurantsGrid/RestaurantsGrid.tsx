@@ -1,5 +1,5 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard from "../RestaurantCard/RestaurantCard";
 
 interface Props {
   restaurants: Restaurant[];

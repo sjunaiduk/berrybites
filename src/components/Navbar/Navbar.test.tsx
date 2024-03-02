@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it } from "vitest";
 import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Navbar from "../src/components/Navbar";
-import { ChakraUiWrapper } from "./test-utils";
+import Navbar from "./Navbar";
+import { ChakraUiWrapper } from "../../../__tests__/utils";
 
 describe("Navbar", () => {
   afterEach(() => cleanup());
