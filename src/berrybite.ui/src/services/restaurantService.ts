@@ -1,9 +1,7 @@
 import axios from "axios";
 
 const client = axios.create({
-  baseURL: `https://cors-anywhere.herokuapp.com/${
-    import.meta.env.VITE_JET_RESTAURANTS_API
-  }`,
+  baseURL: import.meta.env.VITE_JET_RESTAURANTS_API,
 });
 
 class RestaurantService {
