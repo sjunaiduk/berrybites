@@ -28,17 +28,15 @@ This guide assumes you have Node.js 20.x.x installed, along with a compatible np
    First, clone the repository to your local machine using the following command:
 
    ```bash
-   git clone <GIT-REPO-LINK>
+   git clone https://github.com/sjunaiduk/berrybites.git
    ```
-
-   Replace `<GIT-REPO-LINK>` with the URL of your Git repository.
 
 2. **Navigate to the Project Directory**
 
    Change your current directory to the React application's directory:
 
    ```bash
-   cd src/berrybite.ui
+   cd src/berrybites.ui
    ```
 
 3. **Install Dependencies**
