@@ -1,4 +1,4 @@
-name: BerryBite CI / CD
+name: BerryBites CI / CD
 
 on:
   push:

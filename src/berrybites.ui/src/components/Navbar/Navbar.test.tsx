@@ -9,6 +9,6 @@ describe("Navbar", () => {
     const { queryByText } = render(<Navbar />);
 
     // Assert
-    await waitFor(() => expect(queryByText("BerryBite")).toBeInTheDocument());
+    await waitFor(() => expect(queryByText("BerryBites")).toBeInTheDocument());
   });
 });

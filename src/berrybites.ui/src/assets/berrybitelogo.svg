@@ -1,0 +1,80 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="48px" height="48px" viewBox="0,0,256,256">
+    <defs>
+        <radialGradient cx="26.97714" cy="13.75076" r="12.19112" gradientUnits="userSpaceOnUse"
+            id="color-1">
+            <stop offset="0.841" stop-color="#000000" stop-opacity="0.2"></stop>
+            <stop offset="1" stop-color="#000000" stop-opacity="0"></stop>
+        </radialGradient>
+        <linearGradient x1="14.437" y1="11.271" x2="23.633" y2="36.537"
+            gradientUnits="userSpaceOnUse" id="color-2">
+            <stop offset="0.002" stop-color="#dba642"></stop>
+            <stop offset="0.397" stop-color="#cb9c26"></stop>
+            <stop offset="0.763" stop-color="#bf6513"></stop>
+            <stop offset="1" stop-color="#bb5b0c"></stop>
+        </linearGradient>
+        <linearGradient x1="27.859" y1="17.684" x2="36.71" y2="42.003"
+            gradientUnits="userSpaceOnUse" id="color-3">
+            <stop offset="0" stop-color="#f49d2a"></stop>
+            <stop offset="1" stop-color="#d92e00"></stop>
+        </linearGradient>
+        <linearGradient x1="11.918" y1="23.721" x2="20.325" y2="46.818"
+            gradientUnits="userSpaceOnUse" id="color-4">
+            <stop offset="0" stop-color="#f7dea8"></stop>
+            <stop offset="1" stop-color="#ff7e47"></stop>
+        </linearGradient>
+        <linearGradient x1="12.746" y1="30.49" x2="17.786" y2="44.338"
+            gradientUnits="userSpaceOnUse" id="color-5">
+            <stop offset="0.002" stop-color="#dba642"></stop>
+            <stop offset="0.397" stop-color="#cb9c26"></stop>
+            <stop offset="0.763" stop-color="#bf6513"></stop>
+            <stop offset="1" stop-color="#bb5b0c"></stop>
+        </linearGradient>
+        <linearGradient x1="33.128" y1="22.045" x2="37.529" y2="34.135"
+            gradientUnits="userSpaceOnUse" id="color-6">
+            <stop offset="0.002" stop-color="#dba642"></stop>
+            <stop offset="0.397" stop-color="#cb9c26"></stop>
+            <stop offset="0.763" stop-color="#bf6513"></stop>
+            <stop offset="1" stop-color="#bb5b0c"></stop>
+        </linearGradient>
+        <linearGradient x1="15.128" y1="11.045" x2="19.529" y2="23.135"
+            gradientUnits="userSpaceOnUse" id="color-7">
+            <stop offset="0.002" stop-color="#dba642"></stop>
+            <stop offset="0.397" stop-color="#cb9c26"></stop>
+            <stop offset="0.763" stop-color="#bf6513"></stop>
+            <stop offset="1" stop-color="#bb5b0c"></stop>
+        </linearGradient>
+    </defs>
+    <g transform="">
+        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+            style="mix-blend-mode: normal">
+            <g transform="scale(5.33333,5.33333)">
+                <ellipse cx="12.63678" cy="36.07864" transform="rotate(-45.001)" rx="10.5" ry="6"
+                    fill="#107c42"></ellipse>
+                <path
+                    d="M38.691,20.818c-4.101,4.101 -9.327,5.523 -11.667,3.182l14.849,-14.849c2.34,2.34 0.919,7.566 -3.182,11.667z"
+                    fill="#185c37"></path>
+                <path
+                    d="M41.873,9.151c-2.341,-2.341 -7.566,-0.919 -11.667,3.182c-4.101,4.101 -5.522,9.327 -3.182,11.667c2.34,2.34 7.566,0.919 11.667,-3.182c4.101,-4.101 5.522,-9.327 3.182,-11.667z"
+                    fill="url(#color-1)"></path>
+                <ellipse cx="27.024" cy="13.5" rx="6" ry="10.5" fill="#33c481"></ellipse>
+                <path d="M33.024,13.5c0,5.8 -2.69,10.5 -6,10.5v-21c3.31,0 6,4.7 6,10.5z"
+                    fill="#21a366"></path>
+                <circle cx="18.524" cy="22.5" r="9.5" fill="url(#color-2)"></circle>
+                <circle cx="32.524" cy="30.5" r="9.5" fill="url(#color-3)"></circle>
+                <circle cx="16.024" cy="35" r="10" fill="url(#color-4)"></circle>
+                <path
+                    d="M14.024,30c-2.209,0 -4,1.791 -4,4c0,2.209 1.791,4 4,4c2.209,0 4,-1.791 4,-4c0,-2.209 -1.791,-4 -4,-4zM14.024,36.25c-1.243,0 -2.25,-1.007 -2.25,-2.25c0,-1.243 1.007,-2.25 2.25,-2.25c1.243,0 2.25,1.007 2.25,2.25c0,1.243 -1.008,2.25 -2.25,2.25z"
+                    fill="url(#color-5)"></path>
+                <path
+                    d="M36.024,26c-2.209,0 -4,1.791 -4,4c0,2.209 1.791,4 4,4c2.209,0 4,-1.791 4,-4c0,-2.209 -1.791,-4 -4,-4zM36.024,32.25c-1.243,0 -2.25,-1.007 -2.25,-2.25c0,-1.243 1.007,-2.25 2.25,-2.25c1.243,0 2.25,1.007 2.25,2.25c0,1.243 -1.008,2.25 -2.25,2.25z"
+                    fill="url(#color-6)"></path>
+                <path
+                    d="M18.024,15c-2.209,0 -4,1.791 -4,4c0,2.209 1.791,4 4,4c2.209,0 4,-1.791 4,-4c0,-2.209 -1.791,-4 -4,-4zM18.024,21.25c-1.243,0 -2.25,-1.007 -2.25,-2.25c0,-1.243 1.007,-2.25 2.25,-2.25c1.243,0 2.25,1.007 2.25,2.25c0,1.243 -1.008,2.25 -2.25,2.25z"
+                    fill="url(#color-7)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
