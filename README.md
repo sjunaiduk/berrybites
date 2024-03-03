@@ -4,7 +4,7 @@
 
 BerryBites is a quick and easy tool designed to help you discover the top 10 restaurants within any given postcode area. Leveraging the Just Eat API, it fetches and displays key information about each restaurant, including name, cuisine types, ratings, and addresses. Perfect for food enthusiasts looking to explore new dining options.
 
-Check it out [here](https://berrybites.syedjunaid.com_)
+Check it out [here](https://berrybites.syedjunaid.com)
 
 ## Features
 
