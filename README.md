@@ -18,8 +18,8 @@ This guide assumes you have Node.js 20.x.x installed, along with a compatible np
 
 ### Prerequisites
 
-- Node.js version 20.x.x, you can install it (here)[https://nodejs.org/en/download]
-- npm (usually comes with Node.js)
+- Node.js version 20.x.x, you can install it [here](https://nodejs.org/en/download)
+- npm (comes with Node.js, be sure to install it when prompted when installing Node)
 
 ##### (I have Node.js version 20.10.0 and NPM version 10.2.3 for reference)
 
