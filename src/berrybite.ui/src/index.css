@@ -5,6 +5,7 @@
 
 body {
   background-color: rgb(251, 230, 254) !important;
+  padding-bottom: 2rem;
 }
 .star-rating::after {
   content: "/5";

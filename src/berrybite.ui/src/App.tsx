@@ -18,12 +18,16 @@ import RestaurantCard from "./components/RestaurantCard/RestaurantCard";
 function App() {
   const [postcode, setPostcode] = useState("");
 
-  const { data, refetch, isLoading, isFetched } = useRestaurants(postcode);
+  const { data, refetch, isLoading, isFetched, isError } =
+    useRestaurants(postcode);
 
   // When postcode state changes, the data return changes automatically
   // By only 'computing' restaraunt data when isLoading changes
   // the restaraunts currently shown will only change when the user clicks 'search' for a valid postcode.
-  const restaurantData = useMemo(() => data, [isLoading]);
+  const restaurantData = useMemo(
+    () => (isError ? HardcodedRestaurants : data),
+    [isLoading]
+  );
 
   if (isFetched && restaurantData?.length === 0) {
     return (
