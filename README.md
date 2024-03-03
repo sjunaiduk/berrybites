@@ -130,3 +130,7 @@ I would like to add a feature toggle so retaurant data is always shown even if t
 ### Tile Layout
 
 Rather than having 1 column for my Restaurant Cards for larger screens I could switch that to 2 columns.
+
+### Filtering options
+
+The restaurant cards are currently just limited to 10 elements, there can be options added to filter by rating, locality, available cuisines etc.
