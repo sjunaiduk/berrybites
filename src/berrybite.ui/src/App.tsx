@@ -1,14 +1,16 @@
-import { Container, Flex } from "@chakra-ui/react";
+import { Container, Flex, Skeleton, Stack } from "@chakra-ui/react";
 import Navbar from "./components/Navbar/Navbar";
 import RestaurantsGrid from "./components/RestaurantsGrid/RestaurantsGrid";
 import SearchBar from "./components/SearchBar/SearchBar";
 import { useRestaurants } from "./hooks/useRestaurants";
 import { useMemo, useState } from "react";
+import { HardcodedRestaurants } from "./utils/data";
+import RestaurantCard from "./components/RestaurantCard/RestaurantCard";
 
 function App() {
   const [postcode, setPostcode] = useState("");
 
-  const { data, refetch, isFetching } = useRestaurants(postcode);
+  const { data, refetch, isLoading, isFetching } = useRestaurants(postcode);
 
   // When postcode state changes, the data return changes automatically
   // By only 'computing' restaraunt data when isFetching changes
@@ -24,7 +26,17 @@ function App() {
             postcode={postcode}
             setPostcode={setPostcode}
           />
-          <RestaurantsGrid restaurants={restaurantData?.slice(0, 10) || []} />
+          {isLoading ? (
+            <Stack mt={"4rem"}>
+              {HardcodedRestaurants.map((restaurant, index) => (
+                <Skeleton key={index} borderRadius={4}>
+                  <RestaurantCard restaurant={restaurant} />
+                </Skeleton>
+              ))}
+            </Stack>
+          ) : (
+            <RestaurantsGrid restaurants={restaurantData?.slice(0, 10) || []} />
+          )}
         </Flex>
       </Container>
     </>
