@@ -8,9 +8,11 @@ export const ChakraUiWrapper = ({ children }: Props) => (
   <ChakraBaseProvider>{children}</ChakraBaseProvider>
 );
 
-const queryClient = new QueryClient();
-
 export const QueryClientWrapper =
   () =>
   ({ children }: Props) =>
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
+    (
+      <QueryClientProvider client={new QueryClient()}>
+        {children}
+      </QueryClientProvider>
+    );

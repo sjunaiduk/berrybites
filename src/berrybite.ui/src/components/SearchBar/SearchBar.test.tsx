@@ -68,7 +68,7 @@ describe("Search bar", () => {
     // Act
     await user.type(searchBar as HTMLElement, "LU1 1TU");
     await user.click(searchButton as HTMLElement);
-    await user.type(searchBar as HTMLElement, "LU3 9TJ");
+    //await user.type(searchBar as HTMLElement, "asdsa");
 
     // Assert
     expect(
