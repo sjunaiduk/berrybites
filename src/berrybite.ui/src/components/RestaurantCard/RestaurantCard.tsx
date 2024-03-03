@@ -18,6 +18,7 @@ interface Props {
 const RestaurantCard = ({ restaurant }: Props) => {
   return (
     <Card
+      boxShadow={"1px 1px 1px 0px #000000a6"}
       data-testid="restaurant-card"
       minW={"320px"}
       px={4}

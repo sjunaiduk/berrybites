@@ -1,4 +1,12 @@
-import { Container, Flex, Skeleton, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Skeleton,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import Navbar from "./components/Navbar/Navbar";
 import RestaurantsGrid from "./components/RestaurantsGrid/RestaurantsGrid";
 import SearchBar from "./components/SearchBar/SearchBar";
@@ -10,12 +18,25 @@ import RestaurantCard from "./components/RestaurantCard/RestaurantCard";
 function App() {
   const [postcode, setPostcode] = useState("");
 
-  const { data, refetch, isLoading } = useRestaurants(postcode);
+  const { data, refetch, isLoading, isFetched } = useRestaurants(postcode);
 
   // When postcode state changes, the data return changes automatically
   // By only 'computing' restaraunt data when isLoading changes
   // the restaraunts currently shown will only change when the user clicks 'search' for a valid postcode.
   const restaurantData = useMemo(() => data, [isLoading]);
+
+  if (isFetched && restaurantData?.length === 0) {
+    return (
+      <Box mt={4} textAlign="center" p={5}>
+        <Heading size="lg" mb={2}>
+          No Restaurants Found
+        </Heading>
+        <Text fontSize="md">
+          We couldn't find any restaurants matching your search.
+        </Text>
+      </Box>
+    );
+  }
   return (
     <>
       <Navbar />

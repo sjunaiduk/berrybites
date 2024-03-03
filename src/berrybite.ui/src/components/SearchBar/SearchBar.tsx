@@ -33,11 +33,16 @@ function SearchBar({ postcode, setPostcode, fetchData }: Props) {
 
   return (
     <FormControl isInvalid={!isValid}>
-      <InputGroup mt={8} size="lg">
+      <InputGroup mt={8} size="lg" background={"white"}>
         <InputLeftElement>
           <SearchIcon />
         </InputLeftElement>
         <Input
+          border={"1.5px solid #760085"}
+          _focus={{
+            borderColor: "#760085",
+          }}
+          _hover={{}}
           data-testid={"postcode-searchbar"}
           placeholder="Search restaurants by postcode"
           textOverflow={"ellipsis"}
@@ -53,8 +58,8 @@ function SearchBar({ postcode, setPostcode, fetchData }: Props) {
         <InputRightElement width="6rem">
           <Button
             data-testid={"postcode-search-button"}
-            _hover={{ bg: "#ff9000" }}
-            backgroundColor={"#ff8000"}
+            _hover={{ bg: "#900085" }}
+            backgroundColor={"#760085"}
             borderRadius={20}
             color={"white"}
             onClick={() => onSearch()}
